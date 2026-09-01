@@ -1,23 +1,37 @@
-// Dynamic scan ki jagah simple assignment generator
-const container = document.getElementById('buttons-container');
-const urlParams = new URLSearchParams(window.location.search);
-const activeNum = urlParams.get('assignment');
+document.addEventListener("DOMContentLoaded", async function () {
+    const container = document.getElementById('buttons-container');
+    const urlParams = new URLSearchParams(window.location.search);
+    const activeNum = urlParams.get('assignment');
 
-// Humne kitne assignments create kiye hain (Abhi 1 hai, jab assignment 2 bane to 2 kar dena)
-const totalAssignments = 1; 
+    let assignmentIndex = 1;
+    let keepScanning = true;
 
-container.innerHTML = ''; // Loading text hataane ke liye
+    while (keepScanning) {
+        const folderPath = `assignment-${assignmentIndex}/index.html`;
 
-for (let i = 1; i <= totalAssignments; i++) {
-    const btn = document.createElement('a');
-    btn.href = `assignment-${i}/index.html`;
-    btn.className = 'btn';
-    btn.innerText = `Assignment ${i}`;
+        try {
+            // Check karein kya folder aur file exist karti hai
+            const response = await fetch(folderPath, { method: 'HEAD' });
 
-    // Active Highlight Logic
-    if (activeNum == i) {
-        btn.classList.add('active-assignment');
+            if (response.ok) {
+                const btn = document.createElement('a');
+                btn.href = folderPath;
+                btn.className = 'btn';
+                btn.innerText = `Assignment ${assignmentIndex}`;
+
+                // Agar parameter match kare toh highlight karein
+                if (activeNum == assignmentIndex) {
+                    btn.classList.add('active-assignment');
+                }
+
+                container.appendChild(btn);
+                assignmentIndex++;
+            } else {
+                // Jab folder nahi milega toh loop ruk jayega
+                keepScanning = false;
+            }
+        } catch (error) {
+            keepScanning = false;
+        }
     }
-
-    container.appendChild(btn);
-}
+});
