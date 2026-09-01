@@ -1,61 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #f8fafc;
-    color: #0f172a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: 700;
-}
-
-#buttons-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    max-width: 400px;
-}
-
 .btn {
     display: block;
-    width: 100%;
-    padding: 15px 20px;
-    background-color: #007bff;
+    padding: 12px 20px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    background-color: #2563eb; /* Normal Blue */
     color: #ffffff;
     text-decoration: none;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 600;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+
+    /* Smooth Animation */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Computer par mouse hover hone par */
 .btn:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+    background-color: #1d4ed8;
+    transform: scale(1.08); /* Bada hoga */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Active / Highlighted Button Style */
-.active-assignment {
-    background-color: #22c55e !important; /* Green glow color */
-    color: #ffffff !important;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(34, 197, 94, 0.6);
-    border: 2px solid #16a34a;
-  }
-  
+/* Mobile par finger se press/touch hone par */
+.btn:active {
+    transform: scale(0.95); /* Touch hone par thoda press feel hoga */
+}
