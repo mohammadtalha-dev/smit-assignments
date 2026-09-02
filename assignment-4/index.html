@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - HTML Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px 12px;
+            text-align: center;
+        }
+        .bg-cyan { background-color: #80deea; font-weight: bold; }
+        .bg-yellow { background-color: #fff59d; font-weight: bold; }
+        .bold-heading { font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+
+    <!-- Table 1: Device Specifications -->
+    <table>
+        <tr>
+            <th class="bg-cyan">Device</th>
+            <th class="bg-cyan">Brand</th>
+            <th class="bg-cyan" colspan="2">Specifications</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Smartphone</td>
+            <td rowspan="3">Apple</td>
+            <td class="bg-yellow">Model</td>
+            <td class="bg-yellow">Storage</td>
+        </tr>
+        <tr>
+            <td>iPhone 12 Pro</td>
+            <td>256GB</td>
+        </tr>
+        <tr>
+            <td>iPhone SE</td>
+            <td>128GB</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>HP</td>
+            <td colspan="2">15.6" Display</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>Samsung</td>
+            <td colspan="2">10.5" Display</td>
+        </tr>
+    </table>
+
+    <br><br><hr><br>
+
+    <!-- Table 2: Language and Frameworks -->
+    <table>
+        <tr>
+            <th class="bold-heading" colspan="2">Language and Frameworks</th>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Django</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Javascript</td>
+            <td>React.js</td>
+        </tr>
+        <tr>
+            <td>Vue.js</td>
+        </tr>
+        <tr>
+            <td>Ruby</td>
+            <td>Ruby on Rails</td>
+        </tr>
+    </table>
+
+    <br><br><hr><br>
+
+    <!-- Table 3: Weather Station -->
+    <table>
+        <tr>
+            <th class="bold-heading" colspan="5">Weather Station</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Station</th>
+            <th colspan="2">Temperature</th>
+            <th rowspan="2">Humidity</th>
+            <th rowspan="2">Weather</th>
+        </tr>
+        <tr>
+            <th>Max</th>
+            <th>Min</th>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>24</td>
+            <td>19</td>
+            <td>60%</td>
+            <td>cloudy</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>5</td>
+            <td>-1</td>
+            <td>70%</td>
+            <td>Rainy</td>
+        </tr>
+    </table>
+
+</body>
+          </html>
+
