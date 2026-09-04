@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport scaling for mobile screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.85">
+    <title>Assignment 6 - HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Form 1 -->
+    <div class="form-card card-1">
+        <form>
+            <table class="form-table">
+                <tr>
+                    <td class="lbl">Username:</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Password:</td>
+                    <td class="inp"><input type="password" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">City of<br>Employment:</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Web server:</td>
+                    <td class="inp">
+                        <select class="w-100">
+                            <option value="">-- Choose a server --</option>
+                            <option value="1">Server 1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl" valign="top">Please specify<br>your role:</td>
+                    <td class="inp">
+                        <label><input type="radio" name="r"> Admin</label><br>
+                        <label><input type="radio" name="r"> Engineer</label><br>
+                        <label><input type="radio" name="r"> Manager</label><br>
+                        <label><input type="radio" name="r"> Guest</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl" valign="top">Single Sign-on<br>to the following:</td>
+                    <td class="inp">
+                        <label><input type="checkbox"> Mail</label><br>
+                        <label><input type="checkbox"> Payroll</label><br>
+                        <label><input type="checkbox"> Self-service</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pt-10">
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <hr class="sep">
+
+    <!-- Form 2 -->
+    <div class="form-card card-2">
+        <h2>Registration form</h2>
+        <form>
+            <table class="form-table">
+                <tr>
+                    <td class="lbl">First Name</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Last Name</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Nick Name</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">e-mail</td>
+                    <td class="inp"><input type="email" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Password</td>
+                    <td class="inp"><input type="password" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Date of Birth</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Gender</td>
+                    <td class="inp">
+                        <label><input type="radio" name="g2"> Male</label>
+                        <label><input type="radio" name="g2"> Female</label>
+                        <label><input type="radio" name="g2"> Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">Mobile</td>
+                    <td class="inp"><input type="tel" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl" valign="top">Address</td>
+                    <td class="inp"><textarea rows="4" class="w-100"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="pt-10">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <hr class="sep">
+
+    <!-- Form 3 -->
+    <div class="form-card card-3">
+        <h2>Student Registration Form</h2>
+        <form>
+            <table class="form-table">
+                <tr>
+                    <td class="lbl">Roll no. :</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Student name :</td>
+                    <td class="inp">
+                        <div class="flex-line">
+                            <input type="text" placeholder="First Name" class="w-48">
+                            <span>-</span>
+                            <input type="text" placeholder="Last Name" class="w-48">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">Father's name :</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Date of birth :</td>
+                    <td class="inp">
+                        <div class="flex-line">
+                            <input type="text" placeholder="Day" class="w-28">
+                            <span>-</span>
+                            <input type="text" placeholder="Month" class="w-28">
+                            <span>-</span>
+                            <input type="text" placeholder="Year" class="w-28">
+                        </div>
+                        <small class="hint">(DD-MM-YYYY)</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">Mobile no. :</td>
+                    <td class="inp">
+                        <div class="flex-line">
+                            <input type="text" value="+91" class="w-20" readonly>
+                            <span>-</span>
+                            <input type="tel" class="w-75">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">Email id :</td>
+                    <td class="inp"><input type="email" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Password :</td>
+                    <td class="inp"><input type="password" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">Gender :</td>
+                    <td class="inp">
+                        <label><input type="radio" name="g3"> Male</label>
+                        <label><input type="radio" name="g3"> Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">Department :</td>
+                    <td class="inp">
+                        <label><input type="checkbox"> CSE</label>
+                        <label><input type="checkbox"> IT</label>
+                        <label><input type="checkbox"> ECE</label>
+                        <label><input type="checkbox"> Civil</label>
+                        <label><input type="checkbox"> Mech</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">Course :</td>
+                    <td class="inp">
+                        <select class="w-100">
+                            <option value="">---------------- Select Current Course's ----------------</option>
+                            <option value="1">Course 1</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">Student photo :</td>
+                    <td class="inp"><input type="file" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl">City :</td>
+                    <td class="inp"><input type="text" class="w-100"></td>
+                </tr>
+                <tr>
+                    <td class="lbl" valign="top">Address :</td>
+                    <td class="inp"><textarea rows="3" class="w-100"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center pt-15">
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+  </html>
+  
