@@ -1,0 +1,116 @@
+/* Universal Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Times, "Times New Roman", serif;
+    background-color: #ffffff;
+    padding: 12px;
+}
+
+/* Form Container Boxes */
+.form-card {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.card-1 {
+    max-width: 400px;
+    background-color: #ffffff;
+}
+
+.card-2 {
+    max-width: 420px;
+    background-color: #e6e6e6;
+}
+
+.card-3 {
+    max-width: 480px;
+    background-color: #ffe6e6;
+}
+
+/* Headings */
+.card-2 h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card-3 h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* Table Alignment Fixes */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 4px 2px;
+    font-size: 14px;
+}
+
+.lbl {
+    width: 33%;
+    vertical-align: middle;
+}
+
+.inp {
+    width: 67%;
+}
+
+/* All Form Controls Sizing */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 3px 4px;
+    border: 1px solid #767676;
+    border-radius: 2px;
+}
+
+/* Width Classes */
+.w-100 { width: 100%; }
+.w-75  { width: 75%; }
+.w-48  { width: 46%; }
+.w-28  { width: 28%; }
+.w-20  { width: 20%; }
+
+/* Inline Inputs Alignment */
+.flex-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hint {
+    display: block;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.pt-10 { padding-top: 10px; }
+.pt-15 { padding-top: 15px; }
+
+.sep {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 18px 0;
+    max-width: 480px;
+}
+
