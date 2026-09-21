@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 40px;
+}
+
+.left-box h1 {
+  color: dodgerblue;
+  font-size: 40px;
+}
+
+.left-box p {
+  color: black;
+  font-size: 18px;
+}
+
+.right-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px gray;
+  width: 360px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.login-btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+}
+a{
+text-align: center;
+  text-decoration: none;
+  color: dodgerblue;
+  
+  
+}
+hr{
+border: 0;
+  border-top: 1px solid lightgrey;
+  margin: 10px 0;
+  
+}
+.create-btn {
+  background-color: forestgreen;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  }
+  
