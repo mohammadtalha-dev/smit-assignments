@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHOTON WEBSITE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-   <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photon</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-       <div class="logo">
-        <img src="logo.png" alt="sample image">
-       </div>     
-       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-       </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Welcome To Photon</h1>
-        <p>A simple and modern website template built with html and css</p>
-        <button class="btn">Get Started</button>
-    </section>
-    <section class="features">
-        <h2>Our Features</h2>
-        <div class="card-container">
-            <div class="card">
-                <i class="fa-solid fa-bolt"></i>
-                <h3>Fast Performance</h3>
-                <p>Lightning fast loading speeds for all users.</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-desktop"></i>
-                <h3>Responsive Layout</h3>
-                <p>Looks great on mobile,tablet,and desktop screens</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Modern Design</h3>
-                <p>Clean, sleek, and user-friendly interface</p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2026 Photon. All rights reserved.</p>
-    </footer>
+<header>
+<div class="logo">Photon</div>
+<nav>
+<a href="#" class="active">HOME</a>
+<div class="dropdown">
+<a href="#">GALLERY <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+<div class="dropdown-content">
+<a href="#">Nature</a>
+<a href="#">Portrait</a>
+<a href="#">People</a>
+<a href="#">Architecture</a>
+<a href="#">Animals</a>
+<a href="#">Sports</a>
+<a href="#">Travel</a>
+<a href="#">Sub Menu</a>
+</div>
+</div>
+<a href="#">SERVICES</a>
+<a href="#">BLOG</a>
+<a href="#">ABOUT</a>
+<a href="#">REVIEWS</a>
+<a href="#">CONTACT</a>
+</nav>
+<div class="social-icons">
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+</div>
+</header>
+<section class="gallery-container">
+<div class="card card-nature">
+<div class="card-overlay"></div>
+<div class="card-content">
+<h2>Nature</h2>
+<a href="#" class="btn">MORE PHOTOS</a>
+</div>
+</div>
+<div class="card card-portrait">
+<div class="card-overlay"></div>
+<div class="card-content">
+<h2>Portrait</h2>
+<a href="#" class="btn">MORE PHOTOS</a>
+</div>
+</div>
+<div class="card card-people">
+<div class="card-overlay"></div>
+<div class="card-content">
+<h2>People</h2>
+<a href="#" class="btn">MORE PHOTOS</a>
+</div>
+</div>
+</section>
+<footer>
+<p>Copyright ©2026 All rights reserved | This template is made with ♡ by <a href="#">Colorlib</a></p>
+</footer>
 </body>
 </html>
