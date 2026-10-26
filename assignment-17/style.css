@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  } 
+  body {
+    background-color: #f4f4f4;
+ padding: 10px;
+  }  
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .header { background-color: #1a2332; }
+  .menu   { background-color: #ef4452; }
+  .hero   { background-color: #4382c4; }
+  .main   { background-color: #213247; }
+  .banner { background-color: #fcd269; color: #333; }
+  .extra  { background-color: #48b885; }
+  .image  { background-color: #c0e8e6; color: #333; }
+  .empty  { background-color: #ffffff; }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header { height: 50px; }
+  .menu   { height: 50px; }
+  .hero   { height: 120px; }
+  .main   { height: 160px; }
+  .banner { height: 70px; }
+  .extra  { height: 70px; }
+  .image  { height: 90px; }
+  .empty  { display: none; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      display: grid;
+      grid-template-columns: 120px 1fr 1fr;
+      grid-template-rows: 60px 220px 180px 80px 80px;
+      gap: 0;
+    }
+    .header { grid-column: 1 / 4; grid-row: 1; height: auto; }
+    .hero   { grid-column: 1 / 4; grid-row: 2; height: auto; }
+    .menu   { grid-column: 1;     grid-row: 3 / 6; height: auto; }
+    .main   { grid-column: 2 / 4; grid-row: 3; height: auto; }
+    .banner { grid-column: 2 / 4; grid-row: 4; height: auto; }
+    .extra  { grid-column: 2;     grid-row: 5; height: auto; }
+    .image  { grid-column: 3;     grid-row: 5; height: auto; }
+    .empty  { display: none; }
+  }
+  @media (min-width: 1025px) {
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1.5fr 1fr;
+      grid-template-rows: 60px 280px 180px 80px;
+      gap: 0;
+    }
+    .header { grid-column: 1; grid-row: 1; height: auto; }
+    .menu   { grid-column: 2 / 4; grid-row: 1; height: auto; }
+    .hero   { grid-column: 1 / 4; grid-row: 2; height: auto; }
+    .main   { grid-column: 1; grid-row: 3; height: auto; }
+    .empty  { grid-column: 2; grid-row: 3; display: block; }
+    .image  { grid-column: 3; grid-row: 3; height: 90px; }
+    .extra  { grid-column: 3; grid-row: 3; height: 90px; margin-top: 90px; }
+    .banner { grid-column: 1 / 4; grid-row: 4; height: auto; }
+  }
